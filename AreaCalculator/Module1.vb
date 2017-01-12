@@ -37,6 +37,8 @@
             If Decimal.TryParse(inputSide, side) Then
                 Dim areaSquare As String = side * side
                 Console.WriteLine("The area of the square is " + areaSquare)
+                Console.WriteLine()
+                Main()
             Else
                 Console.WriteLine("Invalid Input")
                 Console.WriteLine()
@@ -52,7 +54,7 @@
                 Dim width As Decimal
                 If Decimal.TryParse(inputWidth, width) Then
                     Dim areaRectangle As String = length * width
-                    Console.WriteLine("The area of the triangle is " + areaRectangle)
+                    Console.WriteLine("The area of the rectangle is " + areaRectangle)
                     Console.WriteLine()
                     Main()
                 Else
